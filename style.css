@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f7f7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+.hero {
+    background: white;
+    padding: 80px 0;
+}
+
+.eyebrow {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 19px;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.events {
+    padding: 60px 0;
+}
+
+.events h2 {
+    font-size: 30px;
+}
+
+.section-intro {
+    color: #666;
+    margin: 10px 0 25px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    padding: 9px 15px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #eee;
+}
+
+.filters button.active {
+    background: #222;
+    color: white;
+    border-color: #222;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.event-card span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.event-card h3 {
+    margin: 10px 0;
+}
+
+.event-card p {
+    color: #666;
+}
+
+.event-card.hidden {
+    display: none;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+    color: #777;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}

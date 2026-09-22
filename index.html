@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiSE NYC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <h2>WiSE NYC</h2>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Women in Software Engineering NYC</p>
+
+                <h1>Learn. Connect. Build.</h1>
+
+                <p>
+                    A community for women interested in software engineering,
+                    technology, and tech careers in New York City.
+                </p>
+
+                <a class="button" href="#events">Explore Events</a>
+            </div>
+        </section>
+
+        <section id="events" class="container events">
+
+            <h2>Upcoming Events</h2>
+
+            <p class="section-intro">
+                Explore opportunities to learn technical skills and connect
+                with other women in technology.
+            </p>
+
+            <div class="filters">
+                <button data-category="All">All</button>
+                <button data-category="AI">AI</button>
+                <button data-category="Software Engineering">
+                    Software Engineering
+                </button>
+                <button data-category="Data">Data</button>
+                <button data-category="Networking">Networking</button>
+            </div>
+
+            <div class="event-grid">
+
+                <article class="event-card" data-category="AI">
+                    <span>AI</span>
+                    <h3>AI & Generative AI Workshop</h3>
+                    <p>
+                        Learn practical concepts and tools for working
+                        with generative AI.
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="Software Engineering">
+                    <span>Software Engineering</span>
+                    <h3>Modern Developer Workflow</h3>
+                    <p>
+                        Explore AI-assisted coding, Git, GitHub,
+                        and collaborative development.
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="Data">
+                    <span>Data</span>
+                    <h3>Data Analytics Workshop</h3>
+                    <p>
+                        Learn practical techniques for working with
+                        data and building useful insights.
+                    </p>
+                </article>
+
+                <article class="event-card" data-category="Networking">
+                    <span>Networking</span>
+                    <h3>Women in Tech Networking</h3>
+                    <p>
+                        Meet other women working and learning
+                        in technology in NYC.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>WiSE NYC · Women in Software Engineering</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
